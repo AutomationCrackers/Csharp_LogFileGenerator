@@ -25,6 +25,7 @@ namespace Csharp_LogFileGeneration
         //Step 1 - Delete the Old Exisitng Log File
         public static void DeleteLogFile()
         {
+            GetLogFilePath();
             if (Directory.Exists(LogfilePath))
             {
                 string[] LogFiles = Directory.GetFiles(LogfilePath);
